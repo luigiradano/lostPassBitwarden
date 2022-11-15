@@ -1,4 +1,3 @@
-import json
 import mouse
 import keyboard
 import pyperclip
@@ -27,13 +26,6 @@ moves = ["user", "pass", "URI"]
 structArr = [dict(outStruct) for x in range(MAX)]
 scrollC = 1
 
-def saveJson(structArr):
-    with open("outfile.json", "w") as fout:
-        json.dump(structArr, fout)
-
-def loadJson():
-    with open("outfile.json") as fin:
-        return json.load(fin)
 
 def selectAtIndex(i):
     global scrollC
